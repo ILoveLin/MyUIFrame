@@ -1,0 +1,132 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="com.hjq.umeng"
+5    android:versionCode="10"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="29" />
+10-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml
+11
+12    <!-- 共同权限 -->
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:6:5-67
+13-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+14-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:7:5-76
+14-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:7:22-73
+15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+15-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:8:5-79
+15-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:8:22-76
+16
+17    <!-- 友盟统计 -->
+18    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+18-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:11:5-75
+18-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:11:22-72
+19
+20    <!-- 友盟社会化 -->
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:14:5-80
+21-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:14:22-77
+22    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+22-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:15:5-81
+22-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:15:22-78
+23
+24    <application>
+24-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:17:5-75:19
+25
+26        <!-- 友盟 Key（请在 Gradle 中配置，请不要在此处修改） -->
+27        <meta-data
+28            android:name="UMENG_APPKEY"
+28-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:21:13-40
+29            android:value="5cb16d93570df399fd0014e2" />
+29-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:22:13-44
+30
+31        <!-- QQ AppId（请在 Gradle 中配置，请不要在此处修改） -->
+32        <meta-data
+33            android:name="QQ_APPID"
+33-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:26:13-36
+34            android:value="101828096" />
+34-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:27:13-40
+35        <!-- QQ Key（请在 Gradle 中配置，请不要在此处修改） -->
+36        <meta-data
+37            android:name="QQ_APPKEY"
+37-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:30:13-37
+38            android:value="9dfd3300c3aa3c4596a07796c64914b2" />
+38-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:31:13-41
+39
+40        <!-- 微信 AppId（请在 Gradle 中配置，请不要在此处修改） -->
+41        <meta-data
+42            android:name="WX_APPID"
+42-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:35:13-36
+43            android:value="wxd35706cc9f46114c" />
+43-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:36:13-40
+44        <!-- 微信 Key（请在 Gradle 中配置，请不要在此处修改） -->
+45        <meta-data
+46            android:name="WX_APPKEY"
+46-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:39:13-37
+47            android:value="0c8c7cf831dd135a32b3e395ea459b5a" />
+47-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:40:13-41
+48
+49        <!-- 友盟社会化 -->
+50
+51
+52        <!-- QQ 回调 -->
+53        <activity
+53-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:45:9-58:20
+54            android:name="com.tencent.tauth.AuthActivity"
+54-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:46:13-58
+55            android:launchMode="singleTask"
+55-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:47:13-44
+56            android:noHistory="true"
+56-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:48:13-37
+57            tools:node="replace" >
+57-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:49:13-33
+58            <intent-filter>
+58-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:50:13-57:29
+59                <action android:name="android.intent.action.VIEW" />
+59-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:51:17-69
+59-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:51:25-66
+60
+61                <category android:name="android.intent.category.DEFAULT" />
+61-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:53:17-76
+61-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:53:27-73
+62                <category android:name="android.intent.category.BROWSABLE" />
+62-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:54:17-78
+62-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:54:27-75
+63
+64                <data android:scheme="tencent101828096" />
+64-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:56:23-58
+65            </intent-filter>
+66        </activity>
+67        <activity
+67-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:60:9-64:36
+68            android:name="com.tencent.connect.common.AssistActivity"
+68-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:61:13-69
+69            android:configChanges="orientation|keyboardHidden"
+69-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:62:13-63
+70            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+70-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:63:13-72
+71            tools:node="replace" />
+71-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:64:13-33
+72
+73        <!-- 微信回调（请注意这个 Activity 放置的包名要和当前项目的包名保持一致，否则将不能正常回调） -->
+74        <!-- suppress AndroidDomInspection -->
+75        <activity
+75-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:68:9-73:36
+76            android:name="${applicationId}.wxapi.WXEntryActivity"
+76-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:69:13-66
+77            android:configChanges="keyboardHidden|orientation|screenSize"
+77-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:70:13-74
+78            android:exported="true"
+78-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:71:13-36
+79            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+79-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:72:13-72
+80            tools:node="replace" />
+80-->C:\Users\Administrator\Desktop\Project\MyUIFrame\umeng\src\main\AndroidManifest.xml:73:13-33
+81    </application>
+82
+83</manifest>
